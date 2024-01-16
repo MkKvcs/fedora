@@ -11,7 +11,7 @@ RUN dnf install \
             ibm-plex-fonts-all \
             dnf-plugins-core \
             brave-browser \
-            hardened_malloc
+            hardened_malloc \
             -y
 
 RUN echo "libhardened_malloc" > /etc/ld.so.preload
