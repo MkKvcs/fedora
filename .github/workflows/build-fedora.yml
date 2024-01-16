@@ -1,4 +1,4 @@
-name: build-boxkit
+name: build-fedora
 on:
   pull_request:
     branches:
@@ -11,7 +11,7 @@ on:
     paths-ignore:
       - '**/README.md'
 env:
-    IMAGE_NAME: boxkit
+    IMAGE_NAME: fedora
     IMAGE_TAGS: latest
     IMAGE_REGISTRY: ghcr.io/${{ github.repository_owner }}
 
@@ -37,8 +37,6 @@ jobs:
         with:
           images: |
             ${{ env.IMAGE_NAME }}
-          labels: |
-            io.artifacthub.package.readme-url=https://raw.githubusercontent.com/ublue-os/boxkit/main/README.md
 
       # Build image using Buildah action
       - name: Build Image
