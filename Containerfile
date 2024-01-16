@@ -8,5 +8,6 @@ RUN dnf install \
             neovim \
             ibm-plex-fonts-all \
             dnf-plugins-core \
-            brave-browser
+            brave-browser \
+            -y
      
