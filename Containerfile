@@ -14,4 +14,4 @@ RUN dnf install \
             hardened_malloc \
             -y
 
-RUN echo "libhardened_malloc" > /etc/ld.so.preload
+RUN echo "libhardened_malloc.so" > /etc/ld.so.preload
