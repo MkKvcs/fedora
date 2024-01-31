@@ -8,7 +8,6 @@ RUN dnf copr enable secureblue/hardened_malloc -y
 RUN dnf install \
             neofetch \
             neovim \
-            google-roboto-fonts  \
             dnf-plugins-core \
             brave-browser \
             hardened_malloc \
