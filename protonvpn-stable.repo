@@ -5,5 +5,3 @@
 name = ProtonVPN Fedora Stable repository
 baseurl = https://repo.protonvpn.com/fedora-39-stable
 enabled = 1
-gpgcheck = 1
-gpgkey = https://repo.protonvpn.com/fedora-39-stable/public_key.asc
